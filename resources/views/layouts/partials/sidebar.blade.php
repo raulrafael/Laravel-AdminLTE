@@ -29,7 +29,7 @@
         </form>
         <!-- /.search form -->
 
-        <!-- Sidebar Menu -->
+        <!-- Sidebar Menu --> 
         <ul class="sidebar-menu">
             <li class="header">{{ trans('adminlte_lang::message.header') }}</li>
             <!-- Optionally, you can add icons to the links -->
