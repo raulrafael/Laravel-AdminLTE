@@ -8,9 +8,9 @@
 <div class="row">
 	<table class="table table-striped"> 
 <tr>
-	<th>No.</th>
-	<th>Titulo</th>
-	<th>Descripcion</th>
+	<th>Correo</th>
+	<th>Nombre</th>
+	<th>Password</th>
 </tr>
 
 <a href="{{route('blog.create')}}" class="btn btn-info pull-right">Crear nuevo registro</a><br><br>
@@ -19,8 +19,8 @@
 @foreach($blogs as $blog)
 	<tr>
 		<td>{{$no++}}</td>
-		<td>{{$blog->title}}</td>
-		<td>{{$blog->description}}</td>
+		<td>{{$blog->nombre}}</td>
+		<td>{{$blog->correo}}</td>
 		<form class="" action="{{route('bloge.destroy',$blog->id)}}" method="post">
 			<input type="hidden" name="_method" value="delete">
 			<input type="hidden" name="_token" value="{{csrf_token()}}">

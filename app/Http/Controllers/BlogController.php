@@ -18,9 +18,9 @@ class BlogController extends Controller
     public function index()
     {
         //show data
-        //$blogs = Blog::all();
-        //return view('blog.index',['blogs' => $blogs]);
-        return "hola mundo";
+        $blogs = Blog::all();
+        return view('blog.index',['blogs' => $blogs]);
+        //return "hola mundo";
     }
 
     /**
